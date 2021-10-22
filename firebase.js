@@ -176,8 +176,8 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
   }
 );
 function otp_send() {
-  let phone = "+91-7753915918";
-  // const phone = document.getElementById("phone").value;
+ // let phone = "+91-7753915918";
+   const phone = document.getElementById("phone").value;
   firebase
     .auth()
     .signInWithPhoneNumber(phone, recaptchaVerifier)
