@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./Image/logo.png" alt="">
+        </div>
+        <div id="navbar">
+            <div class="link">
+                <a href="index.html" class="active">Home</a>
+                <a href="bookNow.html">Book Now</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <div class=" home">
+        <div class="content">
+
+            <div id="currentloc">
+                <input type="text" name="" id="curr" placeholder="Current Location">
+                <a href=""> <img src="./Image/gmap.png" alt=""></a>
+            </div>
+            <div id="destination">
+                <input type="text" name="" id="final" placeholder="Final Destination">
+                <img src="./Image/map.png" alt="">
+                <a href="#mapss" id="GetMap" onclick="getmap()">Get Map</a>
+            </div>
+            <div id="dateTime">
+                <input type="text" name="" id="time" placeholder="Date & Time">
+                <a href=""> <img src="./Image/calendar.png" alt=""></a>
+            </div>
+            <a href="./design.html">
+                <button id="srch">Search</button></a>
+        </div>
+    </div>
+    <div class="AboutUs">
+        <div id="what">
+            <h2>What’s findparkingeasy.com?</h2>
+            <p>Website that can make the parking process smoother,safer and it is friendly to the user in almost
+                every aspects.
+            </p>
+        </div>
+        <div id="objectives">
+            <h2>Our Objectives-</h2>
+            <div id="obj">
+                <img src="./Image/Star.png" alt="">
+                <p>Time Efficient</p>
+                <img src="./Image/Star.png" alt="">
+                <p>User Friendly</p>
+                <img src="./Image/Star.png" alt="">
+                <p>High Precision</p>
+                <img src="./Image/Star.png" alt="">
+                <p>More Secure</p>
+                <img src="./Image/Star.png" alt="">
+                <p>Cost Effective</p>
+            </div>
+        </div>
+        <div id="book">
+            <h1>How to book !</h1>
+            <div id="step">
+                <div id="steps">
+                    <ul>
+                        <li>
+                            <h4>Step 1</h4>
+                        </li>
+                        <h2>Check Avaliability</h2>
+                        <p>Fill the location of destination and your current location with date and arrival
+                            &departure time . You will get the slots option if available else we will give you
+                            the
+                            preffered slots.</p>
+                        <li>
+                            <h4>Step 2</h4>
+                        </li>
+                        <h2>Register / Sign Up</h2>
+                        <p>Once you get you preffered slots register yourself otherwise for our permanent
+                            coustemers
+                            please get your self signed in . Registration process involves an otp authentication
+                            on
+                            your mentioned adhdar card mobile no.</p>
+                        <li>
+                            <h4>Step 3</h4>
+                        </li>
+                        <h2>Payment</h2>
+                        <p>As soon as the above process ends we will direct you to a payment link .Get yourrself
+                            done with all steps and you are all set to park your car without any stress.</p>
+                    </ul>
+                </div>
+                <a href=""><img src="./Image/yt.jpeg" id="yt"></a>
+            </div>
+            <div id="gtMAPflex">
+                <div id="gtMAP">
+                    <h1>Get Map !</h1>
+                    <p>You can’t be able to take any stress when you have findmyparking.com!.The map will give
+                        you the best route between your location and parking space.</p>
+                    <div class="contact">
+                        <h2>Get to Us!</h2>
+                        <h3>We will get to you!</h3>
+                    </div>
+                    <button id="login">
+                        <img src="./Image/login.png" alt="">
+                        <a href="bookNow.html">
+                            <h2>REGISTER / LOGIN</h2>
+                        </a>
+                    </button>
+                </div>
+                <!-- <img src="Image/GoogleMap.png" id="Google"> -->
+                <iframe id="mapss"
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d456547.99326864013!2d80.3524178!3d26.6234593!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1634890335304!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>

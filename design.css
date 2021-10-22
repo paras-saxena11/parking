@@ -1,0 +1,163 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 12.5vh;
+}
+#logo img {
+  width: 7rem;
+  height: 5rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin: 1.5rem 2rem 1.5rem 0rem;
+}
+.link a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+.link a:hover {
+  color: red;
+}
+.active {
+  color: #e5e5e5;
+  background: #f19408d5;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+#slot {
+  background-color: #f7dfdfab;
+  text-align: center;
+  height: 4rem;
+  font-family: "Roboto Slab", serif;
+  padding-top: 2rem;
+}
+#slot h1 {
+  font-weight: 400;
+}
+#parking {
+  display: flex;
+}
+#design img {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+  height: 20rem;
+  width: 40rem;
+}
+#vacany {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+#vacany img {
+  height: 2.5rem;
+  width: 3rem;
+  margin-right: 1.5rem;
+}
+#vacany p {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  margin-right: 3.5rem;
+}
+#form {
+  margin-top: 2.3rem;
+  margin-left: 10rem;
+}
+#form h2 {
+  color: #e05252fc;
+  font-weight: 400;
+}
+#FORMS {
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  height: 18rem;
+  padding: 2rem 1rem;
+  max-width: 20rem;
+}
+#time {
+  display: flex;
+}
+#entrance,
+#exit,
+#duration {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+input {
+  background-color: rgb(218, 211, 211);
+  border: none;
+  width: 8rem;
+  margin-right: 2rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+#durtn {
+  width: 18rem;
+}
+input:focus {
+  outline: none;
+}
+#FORMS button {
+  background: #f09f9f8c;
+  margin-top: 1rem;
+  height: 3.4rem;
+  width: 18rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#FORMS a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#FORMS p {
+  text-align: center;
+  margin-top: 1.3rem;
+}
+
+.Qr_pop {
+  display: flex;
+  height: 50vh;
+  width: 30vw;
+  box-shadow: 2px 2px 5px 5px rgba(1, 1, 1, 0.1);
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: -150%;
+  color: black;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+.active {
+  background-color: whitesmoke;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+.bg_clr {
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(10px);
+}
+.close {
+  cursor: pointer;
+}

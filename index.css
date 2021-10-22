@@ -1,0 +1,241 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 12.5vh;
+}
+#logo img {
+  width: 7rem;
+  height: 5rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin: 1.5rem 2rem 1.5rem 0rem;
+}
+.link a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+.link a:hover {
+  color: red;
+}
+.active {
+  color: #e5e5e5;
+  background: #f19408d5;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+.home {
+  background: url(Image/homebg.png) no-repeat;
+  background-size: 215vh 100vh;
+  height: 87.5vh;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  margin-top: 45vh;
+  margin-left: 15rem;
+}
+#currentloc,
+#destination,
+#dateTime {
+  background-color: white;
+  height: 2.7rem;
+  width: 13rem;
+  display: flex;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  margin-right: 0.3rem;
+}
+#destination {
+  width: 17rem;
+}
+#dateTime {
+  margin-right: 0.1rem;
+}
+#GetMap {
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  color: black;
+  background-color: rgb(219, 212, 212);
+  width: 4rem;
+  height: 1.2rem;
+  border-radius: 0.5rem;
+}
+#currentloc img,
+#destination img,
+#dateTime img {
+  height: 1.9rem;
+  width: 2rem;
+  margin-right: 0.1rem;
+  margin-top: 0.3rem;
+}
+#curr,
+#final,
+#time {
+  border-style: none;
+  padding-left: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.5rem;
+}
+#curr:focus,
+#final:focus,
+#time:focus,
+#destination:focus {
+  outline: none;
+}
+#srch {
+  width: 10rem;
+  height: 2.7rem;
+  background: #505585;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+#what h2 {
+  color: #252e80;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+#what p {
+  margin-left: 3rem;
+  margin-top: 1.3rem;
+}
+#objectives h2 {
+  margin-top: 3.5rem;
+  color: #252e80;
+  margin-left: 3rem;
+}
+#obj {
+  margin-left: 2.7rem;
+  display: flex;
+  margin-top: 1rem;
+}
+#obj img {
+  margin-right: 1.2rem;
+}
+#obj p {
+  margin-right: 3rem;
+  margin-top: 0.3rem;
+}
+#book h1 {
+  margin-top: 3.5rem;
+  color: #252e80;
+  margin-left: 3rem;
+}
+#step {
+  display: flex;
+}
+#steps {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  max-width: 48%;
+}
+#steps ul li {
+  list-style: square;
+}
+#steps h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+#steps h2 {
+  margin-bottom: 1.2rem;
+}
+#steps p {
+  margin-bottom: 2.8rem;
+}
+#yt {
+  height: 18rem;
+  width: 30rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+#gtMAPflex {
+  display: flex;
+}
+#Google {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  height: 25rem;
+  width: 35rem;
+}
+#gtMAP {
+  max-width: 48%;
+}
+#gtMAP h1 {
+  margin-top: 0.7rem;
+  color: #252e80;
+  margin-left: 3rem;
+  margin-bottom: 6rem;
+}
+#gtMAP p {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.contact h2 {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  background-color: white;
+  padding: none;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+}
+.contact h3 {
+  color: blue;
+  margin-left: 3rem;
+  margin-top: 0.2rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+}
+#login {
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  background: #f3ae5f;
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  width: 34rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+#login img {
+  height: 3rem;
+}
+#login a {
+  text-decoration: none;
+  color: black;
+}
+#login h2 {
+  margin: 0px;
+  font-size: 1.8rem;
+  margin-left: 9.5rem;
+  padding: 0px;
+  background: #f3ae5f;
+}
+.map {
+  display: none;
+}
+.map1 {
+  display: block;
+}

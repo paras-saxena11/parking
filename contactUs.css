@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+}
+#logo img {
+  width: 7rem;
+  height: 5rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2%;
+  margin: 1.5rem 2rem 1.5rem 0rem;
+}
+.link a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+.link a:hover {
+  color: red;
+}
+.active {
+  color: #e5e5e5;
+  background: #f19408d5;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+.bg {
+  background: url(Image/bg.png);
+  /* background-size: 85.3rem 36.3rem;
+    height: 36.3rem; */
+  height: 100vh;
+}
+.HOME_C {
+  display: flex;
+  justify-content: space-between;
+}
+.content h1 {
+  color: #2e3259;
+  font-family: "Roboto Slab", serif;
+  padding-top: 3rem;
+  margin-left: 3rem;
+  font-size: 2.4rem;
+  margin-bottom: 0.25rem;
+}
+.content h3 {
+  font-family: "Roboto Slab", serif;
+  margin-left: 3rem;
+  max-width: 22rem;
+  line-height: 1.5rem;
+}
+.contact {
+  margin-left: 6rem;
+  margin-top: 5rem;
+}
+.gmail {
+  display: flex;
+}
+.gmail p {
+  color: white;
+  padding-top: 1rem;
+  padding-left: 0.7rem;
+}
+.phone {
+  margin-top: 2rem;
+  display: flex;
+}
+.phone p {
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.form {
+  margin-top: 5rem;
+  display: flex;
+  background-color: white;
+  height: 27rem;
+  width: 21rem;
+  margin-right: 7rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+}
+.logo img {
+  width: 8rem;
+  margin-top: 0.7rem;
+  margin-left: 6rem;
+}
+.cntct {
+  margin-top: 0.4rem;
+  width: 14rem;
+  margin-left: 3rem;
+  background-color: #2b3592;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}
+#nm {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+#first {
+  margin-left: 1rem;
+  width: 18.5rem;
+  background-color: rgb(240, 238, 238);
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  padding-left: 0.3rem;
+}
+.eml {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+#email {
+  margin-left: 1rem;
+  max-width: 18.5rem;
+  background-color: rgb(240, 238, 238);
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  padding-left: 0.3rem;
+}
+#Query {
+  margin-left: 1rem;
+  max-width: 18.5rem;
+  background-color: rgb(240, 238, 238);
+  border: none;
+  border-radius: 0.5rem;
+  height: 4.3rem;
+  padding-left: 0.3rem;
+}
+#smbt {
+  margin-top: 1.2rem;
+  height: 2rem;
+  width: 18.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}

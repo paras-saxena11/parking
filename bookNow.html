@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bookNow.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <div id="logo">
+                <img src="./Image/logo.png" alt="">
+            </div>
+            <div id="navbar">
+                <div class="link">
+                    <a href="index.html">Home</a>
+                    <a href="bookNow.html" class="AActive">Book Now</a>
+                    <a href="contactUs.html">Contact Us</a>
+                </div>
+            </div>
+        </header>
+        <div class=" home">
+            <div class="content">
+                <h1>BOOK SLOT!</h1>
+                <input type="text" name="" id="from" placeholder="From">
+                <div id="to">
+                    <input type="text" name="" id="Toinp" placeholder="To">
+                    <div id="getmp">
+                        <a href=""><img src="./Image/map.png" alt=""></a>
+                        <p>Get Map</p>
+                    </div>
+                </div>
+                <div id="when">
+                    <h3>When</h3>
+                    <a href=""><img src="./Image/calendar.png" alt=""></a>
+                </div>
+                <a href="design.html"> <button id="submit">Search</button>
+                </a>
+                <div class="contact">
+                    <h1>Get to Us!</h1>
+                    <h3>We will get to you!</h3>
+                </div>
+                <div id="login">
+                    <img src="./Image/login.png" alt="">
+                    <div> <button class="reg">Register</button><button class="log">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="./Image/bookUsbg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="signup_pop">
+        <div class="heading">
+            <h2>SIGN UP</h2>
+            <div class="close">&times;</div>
+        </div>
+        <label for="name">Name</label>
+        <input type="text" id="Name">
+        <label for="name">Phone</label>
+        <input type="number" id="phone" placeholder="+91">
+        <label for="name">Password</label>
+        <input type="password" id="password">
+        <label for="name">Confirm Password</label>
+        <input type="password" id="confirmPass">
+        <label for="name">Aadhar Card Number</label>
+        <input type="number" id="Aadhar">
+        <label for="name">Driving License Number</label>
+        <input type="text" id="License">
+        <label for="name">Email</label>
+        <input type="email" id="email">
+        <div id="recaptcha-container"></div>
+        <button id="reg" onclick="otp_send()">Register</button>
+    </div>
+    <div class="OTP_pop">
+        <div class="heading">
+            <h2>Enter verification code</h2>
+            <div class="close2">&times;</div>
+        </div>
+        <label for="code">OTP</label>
+        <input type="number" id="code">
+        <button class="verify" onclick="register(),codeverify()">Verify</button>
+    </div>
+    <div class="signin_pop">
+        <div class="heading">
+            <h2>SIGN IN</h2>
+            <div class="close1">&times;</div>
+        </div>
+        <label for="name">Email</label>
+        <input type="email">
+        <label for="name">Password</label>
+        <input type="password">
+        <button onclick="login()">Login</button>
+    </div>
+
+</body>
+<script>
+    document.querySelector(".reg").addEventListener("click", function () {
+        document.querySelector(".signup_pop").classList.add("active");
+        document.querySelector(".main").classList.add("bg_clr");
+
+    });
+    document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".signup_pop").classList.remove("active");
+        document.querySelector(".main").classList.remove("bg_clr");
+    });
+    document.querySelector(".log").addEventListener("click", function () {
+        document.querySelector(".signin_pop").classList.add("active1");
+        document.querySelector(".main").classList.add("bg_clr");
+
+    });
+    document.querySelector(".close1").addEventListener("click", function () {
+        document.querySelector(".signin_pop").classList.remove("active1");
+        document.querySelector(".main").classList.remove("bg_clr");
+    });
+    document.querySelector("#reg").addEventListener("click", function () {
+        document.querySelector(".OTP_pop").classList.add("active2");
+        document.querySelector(".signup_pop").classList.remove("active");
+        document.querySelector(".main").classList.add("bg_clr");
+
+    });
+    document.querySelector(".close2").addEventListener("click", function () {
+        document.querySelector(".OTP_pop").classList.remove("active2");
+        document.querySelector(".main").classList.remove("bg_clr");
+    });
+</script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="firebase.js"></script>
+
+</html>
