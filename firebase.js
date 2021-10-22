@@ -105,7 +105,7 @@ function login() {
 
       // Push to Firebase Database
       database_ref.child("users/" + user.uid).update(user_data);
-      window.location.replace("Payment.html");
+      window.location.replace("design.html");
       // DOne
       alert("User Logged In!!");
     })
@@ -176,8 +176,8 @@ window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
   }
 );
 function otp_send() {
- // let phone = "+91-7753915918";
-   const phone = document.getElementById("phone").value;
+  // let phone = "+91-7753915918";
+  const phone = document.getElementById("phone").value;
   firebase
     .auth()
     .signInWithPhoneNumber(phone, recaptchaVerifier)
@@ -202,7 +202,7 @@ function codeverify() {
     .then(function (result) {
       alert("Successfully Verified!");
       var user = result.user;
-      window.replace("design.html");
+      window.location.replace("design.html");
     })
     .catch(function (error) {
       alert(error.message);
